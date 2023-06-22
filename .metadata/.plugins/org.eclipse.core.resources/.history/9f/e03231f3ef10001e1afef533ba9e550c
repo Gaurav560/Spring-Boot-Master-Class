@@ -1,0 +1,9 @@
+package demo;
+
+public class nurse {
+
+	public void assist() {
+		
+		System.out.println("nurse is assisiting...");
+	}
+}

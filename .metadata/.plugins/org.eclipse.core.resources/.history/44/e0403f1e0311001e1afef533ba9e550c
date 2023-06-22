@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans:beans xsi:schemaLocation="http://www.springframework.org/schema/mvc       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd   
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd 
+
+
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- bean definitions here -->
+
+	<!-- xml based configuration <bean class="demo.doctor" id="doctor"> <constructor-arg 
+		value="alphaa"> </constructor-arg> </bean> <bean class="demo.nurse" id="nurse"></bean> -->
+
+
+
+	<!-- Annotations based configurations -->
+	<context:component-scan base-package="demo"></context:component-scan>
+</beans>

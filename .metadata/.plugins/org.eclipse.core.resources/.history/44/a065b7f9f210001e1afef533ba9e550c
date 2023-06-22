@@ -1,0 +1,28 @@
+package demo;
+
+public class doctor implements Staff {
+private String qualification;
+
+
+
+	public String getQualification() {
+	return qualification;
+}
+
+
+
+
+
+
+	public doctor(String qualification) {
+	super();
+	this.qualification = qualification;
+}
+
+
+
+	public void assist() {
+		
+		System.out.println("Doctor is assisiting...");
+	}
+}
