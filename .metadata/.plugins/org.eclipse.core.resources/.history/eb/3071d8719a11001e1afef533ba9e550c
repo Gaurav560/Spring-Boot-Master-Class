@@ -1,7 +1,5 @@
 package demo;
 
-import javax.annotation.PostConstruct;
-
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -36,7 +34,6 @@ public class doctor implements Staff, BeanNameAware {
 
 	}
 	
-	@PostConstruct
 	public void postConstruct() {
 		System.out.println("Post Construct Method is called.");
 	}

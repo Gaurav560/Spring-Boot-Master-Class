@@ -17,8 +17,6 @@ ApplicationContext context=new AnnotationConfigApplicationContext(BeanConfig.cla
 	doc.assist();
 	doc.setQualification("mbbs");
 	System.out.println(doc);
-	doctor doc1=context.getBean(doctor.class);
-	System.out.println(doc1);
 	
 
 }

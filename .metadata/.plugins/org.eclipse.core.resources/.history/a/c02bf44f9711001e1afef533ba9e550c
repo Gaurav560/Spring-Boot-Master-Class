@@ -1,18 +1,15 @@
 package demo;
 
-import javax.annotation.PostConstruct;
-
-import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
-@Scope(scopeName = "prototype")
-public class doctor implements Staff, BeanNameAware {
+@Scope(scopeName = "Prototype")
+public class doctor implements Staff {
 
 	private String qualification;
-
-	// to string overridden
+	
+	
+	//to string overridden
 	@Override
 	public String toString() {
 		return "doctor [qualification=" + qualification + "]";
@@ -29,15 +26,5 @@ public class doctor implements Staff, BeanNameAware {
 	public void assist() {
 
 		System.out.println("Doctor is assisiting...");
-	}
-
-	public void setBeanName(String name) {
-		System.out.println("set Bean Name method is called.");
-
-	}
-	
-	@PostConstruct
-	public void postConstruct() {
-		System.out.println("Post Construct Method is called.");
 	}
 }
