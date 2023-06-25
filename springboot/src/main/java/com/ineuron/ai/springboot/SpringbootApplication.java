@@ -1,4 +1,4 @@
-package com.ineuron.ai.springboot;
+ package com.ineuron.ai.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
